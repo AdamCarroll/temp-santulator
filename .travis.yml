@@ -1,0 +1,4 @@
+# Build setup for Travis CI
+
+language:
+  - java
