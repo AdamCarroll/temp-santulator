@@ -6,6 +6,12 @@ jdk: openjdk11
 
 dist: xenial
 
+addons:
+  sonarcloud:
+    organization: adamcarroll-github
+    token:
+      secure: "novZAtL8WmZQD5IOaOAFAFWm7ohdkT3omGvMgg1cO0w6f7ct0O4CXSmMsneDAfYBHI2S/crTnRxnU/u6cdgb6sMeGI/P/7Qtmc7LGQgDB0sPN0uOLE4J3K1t2p8FEEXVAzDkZR5KUkO/VxuHJYm3oArPZoejNnYQVh3EmAmtZTlBkE6nbkO4fkqmmAb1wzRzetypowv99PjhXiWXX5GsHFupwCrm0Y59yfE9DQNeg8HUSe8IXjC6l5b6WfX3wiK6YHuhAan9MqcsuoDLRQp39z404c3p0ZBfG0D6TOb1Sfkks/k1VwDZs5Rpua9Qn6GYPxQBXYSYjLCaTH9j8bi14EHfmujFOx88dcHru48BbwGvQAh2kKypVIGeY6fQUwaJb+yu92ZVPEmNOtaUlIoz76RcbwC/oC7ZJwMfx7sk/mlclYiaXcLfiy4iagLMEvdNMwx6iKRXukGWVoBTxkmfIqjGTUqzb4biS1JkbA6XbjySAQ5kRMBtZZIPRYbtc6BtvJJ8+vOUWxVNv0DlB0iHdJCT7LcKDWcAn09/leOpFeE2L22pu8QeNo/2bDokv4H7LZQPwRVabhJG+vT+/K2vWBbwbC2ND20VuCmWD0zaCV6Va0Biw/nVcJ9fDKDtFK+7iZtvQ7wod7x61rBONjyP+VvRWhdyyQEmjTbT3yof2Gw="
+
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
